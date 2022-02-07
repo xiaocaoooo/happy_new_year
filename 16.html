@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新年快乐</title>
+    <meta http-equiv="refresh" content="6.4;URL=17.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .aso {
+            position: absolute;
+            opacity: 0;
+            width: 250px;
+            height: 500px;
+            overflow: hidden;
+            animation: h 1s linear forwards;
+        }
+
+        .a {
+            position: absolute;
+            width: 10px;
+            height: 500px;
+            background: red;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .o {
+            position: absolute;
+            width: 25px;
+            height: 100px;
+            background: linear-gradient(to bottom,
+                    red 10%,
+                    black 10%,
+                    black 20%,
+                    red 20%,
+                    red 90%,
+                    yellow 90%,
+                    yellow 100%);
+        }
+
+        .o:nth-child(2) {
+            left: 50px;
+            top: 100px;
+            transform: rotate(45deg);
+        }
+
+        .o:nth-child(3) {
+            left: 50px;
+            top: 175px;
+            transform: rotate(45deg);
+        }
+
+        .o:nth-child(4) {
+            left: 50px;
+            top: 250px;
+            transform: rotate(45deg);
+        }
+
+        .o:nth-child(5) {
+            left: 50px;
+            top: 325px;
+            transform: rotate(45deg);
+        }
+
+        .o:nth-child(6) {
+            left: 50px;
+            top: 400px;
+            transform: rotate(45deg);
+        }
+
+        .o:nth-child(7) {
+            right: 50px;
+            top: 50px;
+            transform: rotate(-45deg);
+        }
+
+        .o:nth-child(8) {
+            right: 50px;
+            top: 125px;
+            transform: rotate(-45deg);
+        }
+
+        .o:nth-child(9) {
+            right: 50px;
+            top: 200px;
+            transform: rotate(-45deg);
+        }
+
+        .o:nth-child(10) {
+            right: 50px;
+            top: 275px;
+            transform: rotate(-45deg);
+        }
+
+        .o:nth-child(11) {
+            right: 50px;
+            top: 350px;
+            transform: rotate(-45deg);
+        }
+
+        .b {
+            background: radial-gradient(circle at 50% 100%,
+                    transparent 10%,
+                    yellow 10%,
+                    yellow 20%,
+                    transparent 20%,
+                    transparent 30%,
+                    yellow 30%,
+                    yellow 40%,
+                    transparent 40%,
+                    transparent 50%,
+                    yellow 50%,
+                    yellow 60%,
+                    transparent 60%);
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 100px;
+        }
+
+        .aso:nth-child(1) {
+            top: 59.36970719029853vh;
+            left: 23.429947164384075vw;
+            transform: rotate(2.4858012525217665deg);
+            animation-delay: 2.4705512417162385s;
+        }
+
+        .aso:nth-child(2) {
+            top: 59.411014189872795vh;
+            left: 77.31712089086089vw;
+            transform: rotate(0.05945892542032993deg);
+            animation-delay: 1.94517076754902s;
+        }
+
+        .aso:nth-child(3) {
+            top: 44.17938450792906vh;
+            left: 62.190968913726415vw;
+            transform: rotate(0.6562844800008261deg);
+            animation-delay: 1.7534709220776792s;
+        }
+
+        .aso:nth-child(4) {
+            top: 30.714865086096317vh;
+            left: 14.753263925724148vw;
+            transform: rotate(-1.1133489298596455deg);
+            animation-delay: 0.9103617384044782s;
+        }
+
+        .aso:nth-child(5) {
+            top: 26.349860923757646vh;
+            left: 69.35749820876268vw;
+            transform: rotate(-0.24377273808546107deg);
+            animation-delay: 0.7874166478542833s;
+        }
+
+        .aso:nth-child(6) {
+            top: 74.93519404181257vh;
+            left: 34.03179709471023vw;
+            transform: rotate(0.2536728833964812deg);
+            animation-delay: 4.328741826803941s;
+        }
+
+        .aso:nth-child(7) {
+            top: 42.43624277624889vh;
+            left: 75.10598953568031vw;
+            transform: rotate(2.150283081173181deg);
+            animation-delay: 1.8574631314061976s;
+        }
+
+        .aso:nth-child(8) {
+            top: 18.16683309302627vh;
+            left: 78.8248452028131vw;
+            transform: rotate(1.8362275204771805deg);
+            animation-delay: 5.289821264587258s;
+        }
+
+        .aso:nth-child(9) {
+            top: 38.450067715329254vh;
+            left: 33.274505760324196vw;
+            transform: rotate(0.6895526344776348deg);
+            animation-delay: 2.870506067304339s;
+        }
+
+        .aso:nth-child(10) {
+            top: 11.558779847853941vh;
+            left: 65.76147932528676vw;
+            transform: rotate(4.961201182450152deg);
+            animation-delay: 4.295863053871945s;
+        }
+
+        .aso:nth-child(11) {
+            top: 62.18411254855052vh;
+            left: 18.47654620008244vw;
+            transform: rotate(-3.0366890765949295deg);
+            animation-delay: 6.220686210493695s;
+        }
+
+        .aso:nth-child(12) {
+            top: 28.320742561326593vh;
+            left: 19.51836369831533vw;
+            transform: rotate(-1.3718852532067638deg);
+            animation-delay: 2.0280183291148233s;
+        }
+
+        .aso:nth-child(13) {
+            top: 30.84422921944252vh;
+            left: 74.49044436654744vw;
+            transform: rotate(-4.2491844815249795deg);
+            animation-delay: 0.28048702433093525s;
+        }
+
+        .aso:nth-child(14) {
+            top: 35.79388370879656vh;
+            left: 74.86645226520118vw;
+            transform: rotate(3.715388087736688deg);
+            animation-delay: 2.78272122568379s;
+        }
+
+        .aso:nth-child(15) {
+            top: 64.20683531580544vh;
+            left: 51.07903806036677vw;
+            transform: rotate(-0.49271328657603863deg);
+            animation-delay: 4.849266161416233s;
+        }
+
+        @keyframes h {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+                height: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="b"></div>
+    </div>
+
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="b"></div>
+    </div>
+
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="b"></div>
+    </div>
+
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="b"></div>
+    </div>
+
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="b"></div>
+    </div>
+
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="b"></div>
+    </div>
+
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="b"></div>
+    </div>
+
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="b"></div>
+    </div>
+
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="b"></div>
+    </div>
+
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="b"></div>
+    </div>
+
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="b"></div>
+    </div>
+
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="b"></div>
+    </div>
+
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="b"></div>
+    </div>
+
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="b"></div>
+    </div>
+
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="b"></div>
+    </div>
+</body>
