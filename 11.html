@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新年快乐</title>
+    <meta http-equiv="refresh" content="1.7;URL=12.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .a {
+            position: absolute;
+            width: 10px;
+            height: 500px;
+            background: red;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .o {
+            position: absolute;
+            width: 25px;
+            height: 100px;
+            background: linear-gradient(to bottom,
+                    red 10%,
+                    black 10%,
+                    black 20%,
+                    red 20%,
+                    red 90%,
+                    yellow 90%,
+                    yellow 100%);
+        }
+
+        .o:nth-child(2) {
+            left: 50px;
+            top: 100px;
+            transform: rotate(45deg);
+        }
+
+        .o:nth-child(3) {
+            left: 50px;
+            top: 175px;
+            transform: rotate(45deg);
+        }
+
+        .o:nth-child(4) {
+            left: 50px;
+            top: 250px;
+            transform: rotate(45deg);
+        }
+
+        .o:nth-child(5) {
+            left: 50px;
+            top: 325px;
+            transform: rotate(45deg);
+        }
+
+        .o:nth-child(6) {
+            left: 50px;
+            top: 400px;
+            transform: rotate(45deg);
+        }
+
+        .o:nth-child(7) {
+            right: 50px;
+            top: 50px;
+            transform: rotate(-45deg);
+        }
+
+        .o:nth-child(8) {
+            right: 50px;
+            top: 125px;
+            transform: rotate(-45deg);
+        }
+
+        .o:nth-child(9) {
+            right: 50px;
+            top: 200px;
+            transform: rotate(-45deg);
+        }
+
+        .o:nth-child(10) {
+            right: 50px;
+            top: 275px;
+            transform: rotate(-45deg);
+        }
+
+        .o:nth-child(11) {
+            right: 50px;
+            top: 350px;
+            transform: rotate(-45deg);
+        }
+
+        .b {
+            background: radial-gradient(circle at 50% 100%,
+                    transparent 10%,
+                    yellow 10%,
+                    yellow 20%,
+                    transparent 20%,
+                    transparent 30%,
+                    yellow 30%,
+                    yellow 40%,
+                    transparent 40%,
+                    transparent 50%,
+                    yellow 50%,
+                    yellow 60%,
+                    transparent 60%);
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 100px;
+        }
+
+        .aso:nth-child(1) {
+            position: absolute;
+            left: 500px;
+            transform: rotate(-10deg);
+            animation: h .75s linear forwards;
+            width: 250px;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .aso:nth-child(2) {
+            position: absolute;
+            left: 1000px;
+            transform: rotate(-5deg);
+            opacity: 0;
+            width: 250px;
+            height: 500px;
+            overflow: hidden;
+            animation: h .75s .5s linear forwards;
+        }
+
+        .aso:nth-child(3) {
+            position: absolute;
+            right: 250px;
+            transform: rotate(-7.5deg);
+            opacity: 0;
+            width: 250px;
+            height: 500px;
+            overflow: hidden;
+            animation: h .75s 1s linear forwards;
+        }
+
+        @keyframes h {
+            0%{
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+                height: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="b"></div>
+    </div>
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="b"></div>
+    </div>
+    <div class="aso">
+        <div class="a"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="o"></div>
+        <div class="b"></div>
+    </div>
+</body>
+
