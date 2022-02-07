@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新年快乐</title>
+    <meta http-equiv="refresh" content="40;URL=bilibili.html">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body * {
+            position: fixed;
+        }
+
+        img {
+            display: block;
+            margin: 25px;
+            position: fixed;
+        }
+
+        img:nth-child(1) {
+            animation: blessing1 6.35696530313939s ease-in-out forwards;
+        }
+
+        img:nth-child(2) {
+            animation: blessing2 6.451297067421232s ease-in-out forwards;
+        }
+
+        img:nth-child(3) {
+            animation: blessing3 7.382009305884355s ease-in-out forwards;
+        }
+
+        img:nth-child(4) {
+            top: 10vh;
+            width: 202.5px;
+            left: -250px;
+            animation: blessing4 13.7s .6s linear;
+        }
+
+        img:nth-child(6) {
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: blessing5 21.5s 12s linear,
+                blessing5-2 1.7s 33.5s linear;
+        }
+
+        .text {
+            top: 2.5vh;
+            font-size: 75px;
+            color: #f00;
+            animation: textP 16.1s 3.5s linear;
+            opacity: 0;
+        }
+
+        .text2 {
+            text-align: center;
+            width: 100vw;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            font-size: 184px;
+            color: #ee0;
+            font-family: 'Ma Shan Zheng', cursive;
+            opacity: 0;
+            animation: text2box 1s 16s forwards;
+        }
+
+        .text2 span {
+            position: static;
+            transform: scale(2);
+        }
+
+        .text2 span:nth-child(1) {
+            animation: text2 2.3s 16.5s linear;
+        }
+
+        .text2 span:nth-child(2) {
+            animation: text2 2.3s 17.65s linear;
+        }
+
+        .text2 span:nth-child(3) {
+            animation: text2 2.3s 18.8s linear;
+        }
+
+        .text2 span:nth-child(4) {
+            animation: text2 2.3s 19.95s linear;
+        }
+
+        .text2 span:nth-child(6) {
+            animation: text2 2.3s 22.25s linear;
+        }
+
+        .text2 span:nth-child(7) {
+            animation: text2 2.3s 23.4s linear;
+        }
+
+        .text2 span:nth-child(8) {
+            animation: text2 2.3s 24.55s linear;
+        }
+
+        @keyframes blessing4 {
+            0% {
+                left: -250px;
+            }
+
+            100% {
+                left: 100vw;
+            }
+        }
+
+        @keyframes blessing1 {
+            0% {
+                top: 100vh;
+                left: 100vw;
+                transform: rotate(-10382.38387444726deg);
+                opacity: 1;
+            }
+
+            25% {
+                top: 53.12642918968849vh;
+                left: 54.686409020029124vw;
+                transform: rotate(25506.072654496296deg);
+                opacity: 1;
+            }
+
+            30% {
+                top: 0.6562403525973259vh;
+                left: 26.250886968003428vw;
+                transform: rotate(52808.409452770575deg);
+                opacity: 1;
+            }
+
+            50% {
+                top: 91.1849473843262vh;
+                left: 62.92126094771806vw;
+                transform: rotate(-173686.2818101762deg);
+                opacity: 1;
+            }
+
+            70% {
+                top: 92.53609470631866vh;
+                left: 64.65030067407427vw;
+                transform: rotate(166769.2161965157deg);
+                opacity: 1;
+            }
+
+            75% {
+                top: 3.1135645894710073vh;
+                left: 18.495927667922764vw;
+                transform: rotate(45331.157698141586deg);
+                opacity: 1;
+            }
+
+            99.99999% {
+                opacity: 1;
+            }
+
+            100% {
+                top: 100vh;
+                left: 100vw;
+                transform: rotate(140355.72443214536deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes blessing2 {
+            0% {
+                top: 100vh;
+                left: 100vw;
+                transform: rotate(143953.32729757664deg);
+                opacity: 1;
+            }
+
+            25% {
+                top: 82.84878514329588vh;
+                left: 48.58256942046309vw;
+                transform: rotate(-45559.91786713316deg);
+                opacity: 1;
+            }
+
+            30% {
+                top: 19.827111211529324vh;
+                left: 2.381832668486117vw;
+                transform: rotate(1582.4564757551707deg);
+                opacity: 1;
+            }
+
+            50% {
+                top: 49.23603474652292vh;
+                left: 19.63091853148038vw;
+                transform: rotate(80500.12888580892deg);
+                opacity: 1;
+            }
+
+            70% {
+                top: 56.198469287844254vh;
+                left: 60.72069742671524vw;
+                transform: rotate(-4706.4684753007605deg);
+                opacity: 1;
+            }
+
+            75% {
+                top: 89.85999432887006vh;
+                left: 96.18080167944231vw;
+                transform: rotate(-34032.36284902861deg);
+                opacity: 1;
+            }
+
+            99.99999% {
+                opacity: 1;
+            }
+
+            100% {
+                top: 100vh;
+                left: 100vw;
+                transform: rotate(-74344.10241270815deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes blessing3 {
+            0% {
+                top: 100vh;
+                left: 100vw;
+                transform: rotate(-79139.1812621779deg);
+                opacity: 1;
+            }
+
+            25% {
+                top: 32.817737413347125vh;
+                left: 91.82301725584263vw;
+                transform: rotate(-83251.82030314892deg);
+                opacity: 1;
+            }
+
+            30% {
+                top: 33.25821770315256vh;
+                left: 11.907212865771722vw;
+                transform: rotate(-96129.61251359803deg);
+                opacity: 1;
+            }
+
+            50% {
+                top: 88.10138585272011vh;
+                left: 48.41326036808835vw;
+                transform: rotate(-149452.14722550526deg);
+                opacity: 1;
+            }
+
+            70% {
+                top: 68.16297887632426vh;
+                left: 99.55802385184734vw;
+                transform: rotate(169470.82116819447deg);
+                opacity: 1;
+            }
+
+            75% {
+                top: 51.03940403035128vh;
+                left: 27.615764578592163vw;
+                transform: rotate(-109102.09339123966deg);
+                opacity: 1;
+            }
+
+            99.99999% {
+                opacity: 1;
+            }
+
+            100% {
+                top: 100vh;
+                left: 100vw;
+                transform: rotate(-162923.32051561034deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes textP {
+            0% {
+                right: -250px;
+                opacity: 1;
+            }
+
+            100% {
+                right: 100vw;
+                opacity: 1;
+            }
+        }
+
+        @keyframes blessing5 {
+            0% {
+                width: 405px;
+                opacity: 1;
+            }
+
+            100% {
+                width: 2025px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes blessing5-2 {
+            0% {
+                width: 2025px;
+                opacity: 1;
+            }
+
+            100% {
+                width: 0;
+                opacity: 1;
+            }
+
+        }
+
+        @keyframes text2 {
+
+            0%,
+            100% {
+                font-size: 184px;
+            }
+
+            50% {
+                font-size: 276px;
+            }
+        }
+
+        @keyframes text2box {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./blessing.png">
+    <img src="./blessing.png">
+    <img src="./blessing.png">
+    <img src="./blessing.png">
+    <b class="text">
+        过年啦
+        <br>
+        过年啦
+    </b>
+    <img src="./blessing.png">
+    <div class="text2">
+        <span>欢</span>
+        <span>欢</span>
+        <span>喜</span>
+        <span>喜</span>
+        <br>
+        <span>过</span>
+        <span>大</span>
+        <span>年</span>
+    </div>
+</body>
