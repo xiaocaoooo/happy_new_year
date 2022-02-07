@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新年快乐</title>
+    <meta http-equiv="refresh" content="2.9;URL=14.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .lantern {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            animation: lantern 2.9s ease-in-out forwards;
+        }
+
+        .lantern * {
+            position: absolute;
+        }
+
+        .a {
+            width: 5px;
+            height: 100px;
+            background: red;
+            border: 1px white solid;
+            top: 0;
+        }
+
+        .b {
+            width: 100px;
+            height: 75px;
+            background: red;
+            border: 1px white solid;
+            top: 50px;
+        }
+
+        .c {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            width: 500px;
+            height: 400px;
+            background: red;
+            border-radius: 50%;
+            color: yellow;
+            font-size: 250px;
+            top: 75px;
+        }
+
+        .c::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 10px;
+            height: 300px;
+            background: black;
+            box-shadow: -150px 0 black,
+                        150px 0 black;
+        }
+        .d,.e,.f,.g{
+            width: 10px;
+            height: 250px;
+            background: red;
+            border: 1px white solid;
+            top: 425px;
+        }
+        .d{
+            left: 175px;
+        }
+        .e{
+            left: 220px;
+        }
+        .f{
+            right: 220px;
+        }
+        .g{
+            right: 175px;
+        }
+        @keyframes lantern {
+            0%{
+                left: 100vw;
+                bottom: 0;
+                transform: rotate(0);
+            }
+            50%{
+                left: -50vw;
+                bottom: 0;
+                transform: rotate(0);
+            }
+            100%{
+                left: 100vw;
+                bottom: 75vh;
+                transform: rotate(-360000deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lantern">
+        <div class="c">
+            <b>
+                福
+            </b>
+        </div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+    </div>
+</body>
+
